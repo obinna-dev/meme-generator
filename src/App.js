@@ -1,6 +1,13 @@
 import Nav from "../src/components/Nav"
+import Meme from "../src/components/Meme"
+
 export default function App()   {
     return  (
-        <Nav />
+        <div>
+            <Nav />
+            <Meme />
+        </div>
+        
     )
 }
+

@@ -22,3 +22,45 @@ nav {
 .site-logo  {
     width: 40px;
 }
+
+section {
+    padding: 2rem;
+}
+
+form > div   {
+    display: flex;
+    gap: 1rem;
+}
+
+#top-area,
+#bottom-area    {
+    border : 1px solid #D5D4D8;
+    padding: 0.3rem 0.6rem;
+    max-width: 12rem;
+    min-width: 12rem;
+    height: 2.1rem;
+    border-radius: 5px;
+}
+
+#top-area:active,
+#bottom-area:active,
+#top-area:hover,
+#bottom-area:hover {
+    border : 1px solid purple;
+    width: 14rem;
+    height: 2.1rem;
+}
+
+button  {
+    border: none;
+    border-radius: 5px;
+    width: 27.8rem;
+    height: 3rem;
+    margin: 1rem auto;
+    color: white;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #A626D3 1.18%, #672280 100%)
+}
