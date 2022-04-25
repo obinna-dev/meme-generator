@@ -9,7 +9,7 @@ nav {
     justify-content: space-between;
     color: white;
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
-    padding: 0 1rem;
+    padding: 0 2rem;
 
 }
 
@@ -23,17 +23,18 @@ nav {
     width: 40px;
 }
 
-section {
+section,
+main {
     padding: 2rem;
 }
 
-form > div   {
+.form > div   {
     display: flex;
     gap: 1rem;
 }
 
-#top-area,
-#bottom-area    {
+#top-text-input,
+#bottom-text-input    {
     border : 1px solid #D5D4D8;
     padding: 0.3rem 0.6rem;
     max-width: 12rem;
@@ -42,16 +43,16 @@ form > div   {
     border-radius: 5px;
 }
 
-#top-area:active,
-#bottom-area:active,
-#top-area:hover,
-#bottom-area:hover {
+#top-text-input:active,
+#bottom-text-input:active,
+#top-text-input:hover,
+#bottom-text-input:hover {
     border : 1px solid purple;
     width: 14rem;
     height: 2.1rem;
 }
 
-button  {
+#submit-button  {
     border: none;
     border-radius: 5px;
     width: 27.8rem;
@@ -59,8 +60,20 @@ button  {
     margin: 1rem auto;
     color: white;
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    cursor: pointer;
 }
 
-button:hover {
+#submit-button:hover {
     background: linear-gradient(90deg, #A626D3 1.18%, #672280 100%)
+}
+
+.meme-image-container {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meme-image {
+    max-width: 100%;
 }
