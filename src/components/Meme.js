@@ -10,11 +10,8 @@ export default function Meme()  {
     })
 
     function handleChange(event) {
-        console.log(meme)
-        const {name, type, value} = event.target
-        setMeme(prevMeme => {
-            return {...prevMeme,[name]: value}
-        })
+        const {name, value} = event.target
+        setMeme(prevMeme => ({...prevMeme,[name]: value}))
     }
 
     const [allMemeImages, setAllMemeImages] = React.useState(MemesData)
